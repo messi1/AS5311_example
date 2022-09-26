@@ -1,0 +1,90 @@
+---
+Checks:          'clang-diagnostic-*,clang-analyzer-*,-*,bugprone-macro-*,bugprone-suspicious-enum-usage,hicpp-no-assembler,readability-braces-around-statements,readability-identifier-naming,modernize-use-nullptr,modernize-concat-nested-namespaces,readability-function-size,fuchsia-multiple-inheritance,bugprone-undelegated-constructor,modernize-loop-convert,cert-flp30-c,bugprone-terminating-continue,cppcoreguidelines-avoid-goto,hicpp-multiway-paths-covered,cppcoreguidelines-pro-bounds-pointer-arithmetic,hicpp-signed-bitwise,misc-definitions-in-headers,readability-magic-numbers,readability-isolate-declaration,clang-analyzer-core.NullDereference,-google-readability-function-size,performance-*,modernize-use-override'
+WarningsAsErrors: ''
+HeaderFilterRegex: '*.h, *.hpp'
+AnalyzeTemporaryDtors: false
+FormatStyle:     none
+User:            test
+CheckOptions:
+  - key:             google-readability-braces-around-statements.ShortStatementLines
+    value:           '1'
+  - key:             google-readability-function-size.StatementThreshold
+    value:           '800'
+  - key:             google-readability-namespace-comments.ShortNamespaceLines
+    value:           '10'
+  - key:             google-readability-namespace-comments.SpacesBeforeComments
+    value:           '2'
+  - key:             modernize-loop-convert.MaxCopySize
+    value:           '16'
+  - key:             modernize-loop-convert.MinConfidence
+    value:           reasonable
+  - key:             modernize-loop-convert.NamingStyle
+    value:           CamelCase
+  - key:             modernize-pass-by-value.IncludeStyle
+    value:           llvm
+  - key:             modernize-replace-auto-ptr.IncludeStyle
+    value:           llvm
+  - key:             modernize-use-nullptr.NullMacros
+    value:           'NULL'
+  - key:             readability-braces-around-statements.ShortStatementLines
+    value:           '0'
+  - key:             readability-identifier-naming.ClassCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.ConstexprFunctionCase
+    value:           camelBack
+  #- key:             readability-identifier-naming.FunctionCase
+  #  value:           CamelCase
+  #- key:             readability-identifier-naming.FunctionPrefix
+  #  value:           UPPER_CASE
+  #- key:             readability-identifier-naming.GlobalFunctionCase
+  #  value:           CamelCase
+  - key:             readability-identifier-naming.MethodCase
+    value:           camelBack
+  #- key:             readability-identifier-naming.StaticVariableCase
+  #  value:           CamelCase
+  #- key:             readability-identifier-naming.StaticVariablePrefix
+  #  value:           's'
+  #- key:             readability-identifier-naming.PrivateMemberCase
+  #  value:           CamelCase
+  #- key:             readability-identifier-naming.PrivateMemberPrefix
+  #  value:           'm'
+  #- key:             readability-identifier-naming.ProtectedMemberCase
+  #  value:           CamelCase
+  #- key:             readability-identifier-naming.ProtectedMemberPrefix
+  #  value:           'm'
+  #- key:             readability-identifier-naming.PublicMemberCase
+  #  value:           CamelCase
+  #- key:             readability-identifier-naming.PublicMemberPrefix
+  #  value:           'm'
+  #- key:             readability-identifier-naming.ConstantPointerParameterPrefix
+  #  value:           'p'
+  #- key:             readability-identifier-naming.GlobalConstantPointerParameterPrefix
+  #  value:           'p'
+  #- key:             readability-identifier-naming.GlobalPointerPrefix
+  #  value:           'p'
+  #- key:             readability-identifier-naming.LocalPointerPrefix
+  #  value:           'p'
+  #- key:             readability-identifier-naming.LocalConstantPointerPrefix
+  #  value:           'p'
+  #- key:             readability-identifier-naming.PointerParameterPrefix
+  #  value:           'p'
+  - key:             readability-identifier-naming.EnumCase
+    value:           CamelCase
+  - key:             readability-identifier-naming.EnumConstantCase
+    value:           CamelCase
+  - key:             modernize-use-nullptr.NullMacros
+    value:           'NULL'
+  - key:             readability-function-size.LineThreshold
+    value:           '200'
+  - key:             readability-function-size.ParameterThreshold
+    value:           '5'
+  - key:             hicpp-multiway-paths-covered.WarnOnMissingElse
+    value:           '1'
+  - key:             readability-magic-numbers.IgnoredIntegerValues
+    value:           '0;1'
+  - key:             readability-magic-numbers.IgnoredFloatingPointValues
+    value:           '1'
+  - key:             performance-unnecessary-value-param.AllowedTypes
+    value:           '[Pp](tr)$'
+...
+

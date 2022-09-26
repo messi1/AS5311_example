@@ -1,0 +1,79 @@
+---
+Language:        Cpp
+Standard:        Cpp11
+# STY-01 and STY-02
+TabWidth:        4
+UseTab:          Never
+# STY-12
+PointerAlignment: Left
+# STY-19
+AccessModifierOffset: -2
+BreakBeforeBraces: Custom
+BraceWrapping:   
+  AfterClass:          true
+  AfterControlStatement: true
+  AfterEnum:           true
+  AfterFunction:       true
+  AfterNamespace:      false
+  AfterStruct:         true
+  AfterUnion:          true
+  AfterExternBlock:    true
+  AfterCaseLabel:      true
+  BeforeCatch:         true
+  BeforeElse:          true
+  IndentBraces:        false
+  SplitEmptyFunction:  false
+  SplitEmptyRecord:    false
+  SplitEmptyNamespace: false
+
+# following rules are not mentioned in the coding guideline
+AlignAfterOpenBracket:        Align
+AlignConsecutiveAssignments:  false
+AlignConsecutiveDeclarations: false
+# Clang 9.0.0. feature   AlignConsecutiveMacros:       false
+AlignOperands:                true
+AlignTrailingComments:        true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: false
+# AllowShortLambdasOnASingleLine: SLS_Empty
+AllowShortLoopsOnASingleLine: false
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializersBeforeComma: false
+AlignEscapedNewlinesLeft:     false
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: true
+BinPackArguments: true
+BinPackParameters: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles:  false
+SpacesInContainerLiterals: true
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+IndentCaseLabels: false
+IndentWidth:     4
+IndentWrappedFunctionNames: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 1000
+ReflowComments:  true
+SortIncludes:    true
+SpaceAfterCStyleCast: false
+
+# STY-21
+SpaceBeforeAssignmentOperators: true
+
+ColumnLimit: 110
+...
